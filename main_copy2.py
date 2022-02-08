@@ -12,12 +12,6 @@ from svm_model_load import *
 from crop_image import *
 from resize_image_square import *
 
-config = tf.ConfigProto()
-config.gpu_options.allow_growth = True
-session = tf.Session(config=config)
-CUDA_VISIBLE_DEVICES = 0
-K.clear_session()
-
 
 def make_randf():
     a = randrange(1000)
