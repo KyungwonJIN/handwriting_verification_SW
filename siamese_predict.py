@@ -8,11 +8,6 @@ import matplotlib.pyplot as plt
 import random
 import tensorflow as tf
 from keras.models import Model
-config = tf.ConfigProto()
-config.gpu_options.allow_growth = True
-session = tf.Session(config = config)
-CUDA_VISIBLE_DEVICES=0
-K.clear_session()
 
 def load_model_(model_path):
     # weight_name = 'class5_112-0.0660_modify'
